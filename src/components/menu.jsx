@@ -13,8 +13,8 @@ export function MenuSection() {
     { id: 1, url: menu1, alt: "Menu Page 1" },
     { id: 2, url: menu2, alt: "Menu Page 2" },
     { id: 3, url: menu3, alt: "Menu Page 3" },
-    { id: 4, url: menu4, alt: "Menu Page 4" },
-    { id: 5, url: menu5, alt: "Menu Page 5" },
+    { id: 4, url: menu5, alt: "Menu Page 4" },
+    { id: 5, url: menu4, alt: "Menu Page 5" },
     { id: 6, url: menu6, alt: "Menu Page 6" },
   ];
 

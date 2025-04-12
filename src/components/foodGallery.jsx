@@ -32,7 +32,7 @@ export function FoodGallerySection() {
     { id: 1, name: "Sweet and Sour Pork", imageUrl: food1 },
     { id: 2, name: "Salt and Pepper Tofu", imageUrl: food2 },
     { id: 3, name: "Roast Pork Soup", imageUrl: food3 },
-    { id: 4, name: "Combination Salad", imageUrl: food4 },
+    { id: 4, name: "Beef Salad", imageUrl: food4 },
     { id: 5, name: "Combination HotPot", imageUrl: food5 },
     { id: 6, name: "Pork Plum Sauce", imageUrl: food6 },
     { id: 7, name: "Roast Duck", imageUrl: food7 },
