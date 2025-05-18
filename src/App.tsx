@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Clock, MapPin, Phone, Menu, Instagram, Facebook, Twitter } from 'lucide-react';
-
+import home1 from "./about/home1.jpg";
 import AboutSection from "./components/about.jsx";
 import FoodGallerySection from "./components/foodGallery.jsx";
 import MenuSection from "./components/menu.jsx";
@@ -18,7 +18,7 @@ function App() {
       <div 
         className="h-screen bg-cover bg-center relative"
         style={{
-          backgroundImage: `url('https://lh3.googleusercontent.com/p/AF1QipOGiKEHBu6Up94ntYl4tOA6YKU0iCfaGujr6ArB=s1360-w1360-h1020')`
+          backgroundImage: `url('${home1}')`
         }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-50">

@@ -10,7 +10,10 @@ import food8 from "../foods/food8.jpg";
 import food9 from "../foods/food9.jpg";
 import food10 from "../foods/food10.jpg";
 import food11 from "../foods/food11.jpg";
-import food12 from "../foods/food12.jpg";
+
+import food13 from "../foods/food13.jpg";
+import food14 from "../foods/food14.jpg";
+import food15 from "../foods/food15.jpg";
 import { Book, ArrowRight } from 'lucide-react';
 
 export function FoodGallerySection() {
@@ -31,13 +34,16 @@ export function FoodGallerySection() {
   const featuredDishes = [
     { id: 1, name: "Sweet and Sour Pork", imageUrl: food1 },
     { id: 2, name: "Salt and Pepper Tofu", imageUrl: food2 },
-    { id: 3, name: "Roast Pork Soup", imageUrl: food3 },
+    { id: 3, name: "Roast Duck Soup", imageUrl: food3 },
     { id: 4, name: "Beef Salad", imageUrl: food4 },
     { id: 5, name: "Combination HotPot", imageUrl: food5 },
     { id: 6, name: "Pork Plum Sauce", imageUrl: food6 },
     { id: 7, name: "Roast Duck", imageUrl: food7 },
     { id: 8, name: "Salt Pepper Eggplant", imageUrl: food8 },
     { id: 11, name: "Vietnamese Coffee", imageUrl: food11 },
+    { id: 13, name: "Chicken Ginger Chili", imageUrl: food13 },
+    { id: 14, name: "Stir-Fried Mixed Vegetable", imageUrl: food14 },
+    { id: 15, name: "Crispy Fried Fish Barramundi with Black Bean Sauce", imageUrl: food15 }
   ];
 
   const categories = [
