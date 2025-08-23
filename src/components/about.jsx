@@ -1,8 +1,9 @@
 import React from 'react';
-import { Clock, MapPin, Phone, Instagram, Facebook } from 'lucide-react';
+import { Clock, MapPin, Phone, Instagram, Facebook, Bot } from 'lucide-react';
 import about1 from "../about/about1.jpg";
 import about4 from "../about/about4.jpg";
 import about5 from "../about/about5.jpg";
+
 export function AboutSection() {
   const aboutInfo = {
     title: "About Us",
@@ -15,6 +16,11 @@ export function AboutSection() {
     },
     location: "2 Smith St, Thebarton SA 5031",
     phone: "(08) 8352 1719",
+    aiAgent: {
+      phone: "(07) 4276 4199",
+      description: " Our AI agent answers your questions about our Vietnamese restaurant.",
+      privacy: "🔒 Your data is private and never stored or shared."
+    },
     socials: {
       facebook: "https://www.facebook.com/VietnamVillageRestaurant"
     },
@@ -77,33 +83,47 @@ export function AboutSection() {
             </div>
 
             {/* Info Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-3">
-                  <Clock className="w-6 h-6 text-red-600" />
-                  <h3 className="font-semibold text-gray-800">Hours</h3>
+            <div className="space-y-4">
+              {/* First Row - 3 Cards */}
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Clock className="w-6 h-6 text-red-600" />
+                    <h3 className="font-semibold text-gray-800">Hours</h3>
+                  </div>
+                  <p className="text-gray-700">{aboutInfo.hours.weekdays}</p>
+                  <p className="text-gray-700">{aboutInfo.hours.sunday}</p>
+                  <p className="text-gray-700">{aboutInfo.hours.monday}</p>
                 </div>
-                <p className="text-gray-700">{aboutInfo.hours.weekdays}</p>
-                <p className="text-gray-700">{aboutInfo.hours.sunday}</p>
-                <p className="text-gray-700">{aboutInfo.hours.monday}</p>
+
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <MapPin className="w-6 h-6 text-red-600" />
+                    <h3 className="font-semibold text-gray-800">Location</h3>
+                  </div>
+                  <p className="text-gray-700">{aboutInfo.location}</p>
+                </div>
+
+                <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+                  <div className="flex items-center space-x-3 mb-3">
+                    <Phone className="w-6 h-6 text-red-600" />
+                    <h3 className="font-semibold text-gray-800">Reservations</h3>
+                  </div>
+                  <p className="text-gray-700">{aboutInfo.phone}</p>
+                </div>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+              {/* Second Row - 1 Card */}
+              {/* <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 border-l-4 border-red-600">
                 <div className="flex items-center space-x-3 mb-3">
-                  <MapPin className="w-6 h-6 text-red-600" />
-                  <h3 className="font-semibold text-gray-800">Location</h3>
+                  <Bot className="w-6 h-6 text-red-600" />
+                  <h3 className="font-semibold text-gray-800">📞 AI Agent Available 24/7</h3>
                 </div>
-                <p className="text-gray-700">{aboutInfo.location}</p>
-              </div>
+                <p className="text-gray-700 mb-2">{aboutInfo.aiAgent.description}</p>
+                <p className="font-semibold text-gray-800">{aboutInfo.aiAgent.phone}</p>
+                <p className="text-sm text-gray-600 mb-3">{aboutInfo.aiAgent.privacy}</p>
 
-              <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
-                <div className="flex items-center space-x-3 mb-3">
-                  <Phone className="w-6 h-6 text-red-600" />
-                  <h3 className="font-semibold text-gray-800">Reservations</h3>
-                  
-                </div>
-                <p className="text-gray-700">{aboutInfo.phone}</p>
-              </div>
+              </div> */}
             </div>
 
             {/* CTA and Social */}

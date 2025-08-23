@@ -1,1 +1,210 @@
-https://lh3.googleusercontent.com/p/AF1QipOGiKEHBu6Up94ntYl4tOA6YKU0iCfaGujr6ArB=s1360-w1360-h1020
+const menuItems = [
+    {
+      category: "CHINESE SOUP",
+      items: [
+        { name: "Short Soup", description: "", price: "$7.5" },
+        { name: "Chicken Sweet Corn Soup", description: "", price: "$7.5" },
+        { name: "Chicken and Mushroom soup", description: "", price: "$7.5" },
+        { name: "Crabmeat Sweetcorn soup", description: "", price: "$8.5" },
+        { name: "Crabmeat Asparagus soup", description: "", price: "$8.5" }
+      ]
+    },
+    {
+      category: "LARGE SOUP TO SHARE (Vietnamese)",
+      items: [
+        { name: "Hot & Sour Chicken Soup", description: "", price: "$22.9 / $32.9" },
+        { name: "Combination Soup", description: "(Chicken, Prawn, Squid & Pork)", price: "$22.9 / $32.9" },
+        { name: "Hot & Sour King Prawn Soup", description: "", price: "$23.9 / $35.9" }
+      ]
+    },
+    {
+      category: "ENTRÉE",
+      items: [
+        { name: "Cold Rolls (2)", description: "", price: "$6.0" },
+        { name: "Spring Rolls (2)", description: "", price: "$5.5" },
+        { name: "Dim Sims (2) Steamed or Fried", description: "", price: "$5.5" },
+        { name: "Satay Chicken (2)", description: "", price: "$7.6" },
+        { name: "Satay Beef (2)", description: "", price: "$7.6" },
+        { name: "Prawn Fritters (5)", description: "", price: "$12.0" },
+        { name: "Deep Fried Scallops (8)", description: "", price: "$12.0" },
+        { name: "Salt and Pepper Quail (1)", description: "", price: "$12.0" }
+      ]
+    },
+    {
+      category: "NOODLES",
+      items: [
+        { name: "Singapore Noodles", description: "", price: "$21.9" },
+        { name: "Seafood Rice/Egg/Hokkien Noodles", description: "", price: "$27.9" },
+        { name: "Combination Crispy Fried Noodles", description: "", price: "$21.9" },
+        { name: "Combination Hokkien/Rice Noodles", description: "", price: "$21.9" },
+        { name: "Chicken/Beef Black Bean Noodles", description: "", price: "$21.9" }
+      ]
+    },
+    {
+      category: "RICE",
+      items: [
+        { name: "Rice Hotpot", description: "", price: "S ($23.9) / M ($30.9) / L ($40.9)" },
+        { name: "Fried Rice", description: "", price: "S ($10.9) / L ($13.9) / XL ($25.0)" },
+        { name: "Curry Fried Rice", description: "", price: "S ($10.9) / L ($13.9)" },
+        { name: "Steamed Rice", description: "", price: "S ($2.5) / L ($3.5)" }
+      ]
+    },
+    {
+      category: "VIETNAMESE SALADS",
+      items: [
+        { name: "Chicken Salad", description: "", price: "$20.9" },
+        { name: "Beef Salad", description: "", price: "$20.9" },
+        { name: "King Prawn Salad", description: "", price: "$26.9" },
+        { name: "Combination Salad", description: "", price: "$21.9" }
+      ]
+    },
+    {
+      category: "DUCK",
+      items: [
+        { name: "Roast Duck Vietnamese Style", description: "", price: "$32.9" },
+        { name: "Duck with Vegetables", description: "", price: "$25.9" },
+        { name: "Combination Duck", description: "", price: "$29.9" },
+        { name: "Duck in Black Bean Sauce (Battered)", description: "", price: "$25.9" },
+        { name: "Lemon Duck (Battered)", description: "", price: "$25.9" },
+        { name: "Sweet and Sour Duck (Battered)", description: "", price: "$25.9" }
+      ]
+    },
+    {
+      category: "STEAK",
+      items: [
+        { name: "Steak Chili Lemongrass", description: "", price: "$20.9" },
+        { name: "Steak Coconut Milk and Lemongrass", description: "", price: "$20.9" },
+        { name: "Steak with Basil Sauce", description: "", price: "$20.9" },
+        { name: "Steak in Black Bean Sauce", description: "", price: "$20.9" },
+        { name: "Steak and Vegetables", description: "", price: "$20.9" },
+        { name: "Steak with Cashew Nuts", description: "", price: "$21.9" },
+        { name: "Steak Plum Sauce (Battered)", description: "", price: "$20.9" },
+        { name: "Satay Steak (Main)", description: "", price: "$20.9" },
+        { name: "Sour Grilled Beef", description: "", price: "$20.9" },
+        { name: "Shanghai Steak", description: "", price: "$20.9" },
+        { name: "Sze Chuan Steak (Spicy)", description: "", price: "$20.9" },
+        { name: "Sizzling Steak Vietnamese Style", description: "", price: "$21.9" },
+        { name: "Mongolian Steak", description: "", price: "$21.9" },
+        { name: "Sizzling Fillet Steak", description: "", price: "$30.9" }
+      ]
+    },
+    {
+      category: "CHICKEN",
+      items: [
+        { name: "Chicken with Chili Lemongrass", description: "", price: "$20.9" },
+        { name: "Chicken, Coconut Milk &Lemongrass", description: "", price: "$20.9" },
+        { name: "Chicken with Basil Sauce", description: "", price: "$20.9" },
+        { name: "Chicken with Black Bean Sauce", description: "", price: "$20.9" },
+        { name: "Satay Chicken (Main)", description: "", price: "$20.9" },
+        { name: "Boneless Lemon Chicken (Battered)", description: "", price: "$20.9" },
+        { name: "Boneless Honey Chicken (Battered)", description: "", price: "$20.9" },
+        { name: "Chicken Ginger Chilli (Battered)", description: "", price: "$20.9" },
+        { name: "Chicken Omelet", description: "", price: "$20.9" },
+        { name: "Curry Chicken", description: "", price: "$20.9" },
+        { name: "Sze Chuan Chicken (Spicy)", description: "", price: "$20.9" },
+        { name: "Mongolian Chicken", description: "", price: "$21.9" },
+        { name: "Chicken and Cashew Nuts", description: "", price: "$21.9" },
+        { name: "Chicken and Vegetables", description: "", price: "$20.9" },
+        { name: "Crispy Fried Chicken (with Bones)", description: "", price: "$19.9" },
+        { name: "Crispy Lemon Chicken (with bones)", description: "", price: "$19.9" }
+      ]
+    },
+    {
+      category: "PORK",
+      items: [
+        { name: "Pork Chili Lemongrass", description: "", price: "$20.9" },
+        { name: "Pork in Coconut Milk & Lemongrass", description: "", price: "$20.9" },
+        { name: "Pork and Cashew Nuts", description: "", price: "$21.9" },
+        { name: "Pork and Vegetables", description: "", price: "$20.9" },
+        { name: "Roast Pork with Chili Vegetables", description: "", price: "$22.9" },
+        { name: "Roast Pork with Fresh Salad", description: "", price: "$22.9" },
+        { name: "Braised Ginger Pork in Fish Sauce", description: "", price: "$20.9" },
+        { name: "Honey Garlic Pork (Battered)", description: "", price: "$20.9" },
+        { name: "Pork Ginger Chili (Battered)", description: "", price: "$20.9" },
+        { name: "Pork in Peking Sauce (Battered)", description: "", price: "$20.9" },
+        { name: "Pork in Plum Sauce (Battered)", description: "", price: "$20.9" },
+        { name: "Pork in Black Bean Sauce (Battered)", description: "", price: "$20.9" },
+        { name: "Sweet and Sour Pork (Battered)", description: "", price: "$20.9" }
+      ]
+    },
+    {
+      category: "SEAFOOD",
+      items: [
+        { name: "Combination Seafood & Vegetables", description: "", price: "$26.9" },
+        { name: "Combination Seafood in Basil Sauce", description: "", price: "$26.9" },
+        { name: "Prawn, Coconut Milk & Lemongrass", description: "", price: "$26.9" },
+        { name: "Prawn with Chili and Lemongrass", description: "", price: "$26.9" },
+        { name: "Prawn with Vegetables", description: "", price: "$26.9" },
+        { name: "Prawn with Black Bean sauce", description: "", price: "$26.9" },
+        { name: "Prawn and Cashew Nuts", description: "", price: "$27.9" },
+        { name: "Honey Prawn (Battered)", description: "", price: "$26.9" },
+        { name: "Prawn and Basil Sauce", description: "", price: "$26.9" },
+        { name: "Sweet and Sour Prawns", description: "", price: "$26.9" },
+        { name: "Curry King Prawns", description: "", price: "$26.9" },
+        { name: "Sizzling Garlic King Prawns", description: "", price: "$26.9" },
+        { name: "Satay King Prawns (Main)", description: "", price: "$26.9" },
+        { name: "King Prawn Omelet", description: "", price: "$26.9" },
+        { name: "Salt and Pepper Prawn", description: "", price: "$26.9" },
+        { name: "Sze Chuan Prawn (Spicy)", description: "", price: "$26.9" },
+        { name: "Scallops with Ginger Sauce", description: "", price: "$27.9" },
+        { name: "Scallops & Cashew Nuts", description: "", price: "$27.9" },
+        { name: "Curry Scallops", description: "", price: "$27.9" },
+        { name: "Scallops and Seasonal Vegetables", description: "", price: "$27.9" },
+        { name: "Scallops with Black Bean Sauce", description: "", price: "$27.9" },
+        { name: "Sweet and Sour Scallops", description: "", price: "$27.9" },
+        { name: "Salt and Pepper Scallops", description: "", price: "$27.9" },
+        { name: "Sze Chuan Scallops (Spicy)", description: "", price: "$27.9" },
+        { name: "Squid Chili Lemongrass", description: "", price: "$23.9" },
+        { name: "Salt and Pepper Squid", description: "", price: "$23.9" }
+      ]
+    },
+    {
+      category: "VEGETARIAN",
+      items: [
+        { name: "Vegt Rice Hotpot S", description: "", price: "$21.9" },
+        { name: "Vegt Rice Hotpot M", description: "", price: "$29.9" },
+        { name: "Vegt Rice Hotpot L", description: "", price: "$37.9" },
+        { name: "Vegetarian Fried Rice S", description: "", price: "$10.5" },
+        { name: "Vegetarian Fried Rice L", description: "", price: "$13.5" },
+        { name: "Vegetarian Hokkien Noodles", description: "", price: "$19.9" },
+        { name: "Vegetarian Rice Noodles", description: "", price: "$19.9" },
+        { name: "Vegetarian Singapore Noodles", description: "", price: "$19.9" },
+        { name: "Stir-Fried Mixed Vegetables", description: "", price: "$17.9" },
+        { name: "Steamed Vegetables", description: "", price: "$17.9" },
+        { name: "Sweet and Sour Tofu", description: "", price: "$18.9" },
+        { name: "Curry Vegetables", description: "", price: "$18.9" },
+        { name: "Bok Choy with Oyster Sauce", description: "", price: "$17.9" },
+        { name: "Chinese Broccoli in Oyster Sauce", description: "", price: "$17.9" },
+        { name: "Vegetarian Vietnamese Salad", description: "", price: "$17.9" },
+        { name: "Tofu & Vegetables", description: "", price: "$18.9" },
+        { name: "Tofu with Chili and Lemongrass", description: "", price: "$18.9" },
+        { name: "Tofu with Coconut Milk & Lemongrass", description: "", price: "$18.9" },
+        { name: "Tofu with Black Bean Sauce", description: "", price: "$18.9" },
+        { name: "Salt and Pepper Tofu", description: "", price: "$18.9" },
+        { name: "Salt and Pepper Eggplant", description: "", price: "$18.9" }
+      ]
+    },
+    {
+      category: "SPECIAL LUNCH MENU",
+      items: [
+        { name: "Roast Pork", description: "Rice Dishes with your choice of", price: "$17.0" },
+        { name: "Crispy Fried Chicken (With Bones)", description: "Rice Dishes with your choice of", price: "$15.5" },
+        { name: "Chicken/Steak Black Bean Sauce", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Chicken/Steak with Vegetables", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Chicken/Steak Chili Lemongrass", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Chicken/Steak in Coconut Milk and Lemongrass", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Sze Chuan Chicken/Steak", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Prawn & Vegetables", description: "Rice Dishes with your choice of", price: "$19.5" },
+        { name: "Prawn & Cashew Nuts", description: "Rice Dishes with your choice of", price: "$19.5" },
+        { name: "Sze Chuan King Prawn", description: "Rice Dishes with your choice of", price: "$19.5" },
+        { name: "Chicken Ginger Chili (Battered)", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Salt & Peppered Squid", description: "Rice Dishes with your choice of", price: "$17.0" },
+        { name: "Honey/Lemon Chicken (Boneless)", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Tofu & Vegetables", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Tofu, Coconut Milk and Lemongrass", description: "Rice Dishes with your choice of", price: "$16.0" },
+        { name: "Chicken OR Steak OR Roast Pork", description: "Vermicelli Noodle and Salad Bowls with your choice of", price: "$17.0" },
+        { name: "Tofu OR Veg Spring Rolls", description: "Vermicelli Noodle and Salad Bowls with your choice of", price: "$17.0" },
+        { name: "Spring Rolls & Roast Pork Combo", description: "Vermicelli Noodle and Salad Bowls with your choice of", price: "$18.5" }
+      ]
+    }
+  ];

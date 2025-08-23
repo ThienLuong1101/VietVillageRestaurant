@@ -25,9 +25,14 @@ function App() {
           <div className="container mx-auto px-6 h-full flex flex-col justify-center items-center text-white">
             <h1 className="text-5xl md:text-7xl font-bold mb-4 text-center">Vietnam Village Restaurant</h1>
             <p className="text-xl md:text-2xl mb-8 text-center">Experience authentic Vietnam cuisine</p>
-            <a href="#menu" className="bg-white text-black px-8 py-3 rounded-full hover:bg-opacity-90 transition duration-300">
-              View Menu
-            </a>
+            <div className="flex space-x-4">
+              <a href="#menu" className="bg-white text-black px-8 py-3 rounded-full hover:bg-opacity-90 transition duration-300">
+                View Menu
+              </a>
+              <a href="https://bookings.ordiagents.org/?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f" className="text-white px-8 py-3 rounded-full bg-red-500 hover:bg-white hover:text-black transition duration-300 font-bold">
+                Make a Reservation
+              </a>
+            </div>
             
           </div>
         </div>
