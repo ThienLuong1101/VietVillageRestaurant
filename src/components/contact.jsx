@@ -5,7 +5,7 @@ export function ContactSection() {
   const contactInfo = {
     aiAgent: {
       phone: "+61871009132",
-      description: "24/7 AI assistant for reservations outside working hours"
+      description: "24/7 virtual assistant for reservations outside working hours"
     }
   };
 
@@ -36,7 +36,7 @@ export function ContactSection() {
                   </div>
                 )}
               </div>
-              <h4 className="font-semibold text-gray-800">Call Virtual for Reservation</h4>
+              <h4 className="font-semibold text-gray-800">Call Ordi for Reservation</h4>
             </div>
             <p className="text-sm text-gray-600 mb-4">{contactInfo.aiAgent.description}</p>
             <button
