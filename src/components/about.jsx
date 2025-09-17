@@ -127,7 +127,7 @@ export function AboutSection() {
             </div>
 
             {/* CTA and Social */}
-            <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+            {/* <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
               <a 
                 href="#menu" 
                 className="inline-flex items-center px-8 py-3 bg-red-600 text-white font-medium rounded-lg hover:bg-red-700 transition duration-300"
@@ -137,7 +137,24 @@ export function AboutSection() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
               </a>
-            </div>
+            </div> */}
+            <div className="flex gap-4">
+                <a 
+                  href="#menu" 
+                  className="flex-1 bg-red-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-red-700 transition-all duration-300 text-center hover:shadow-lg transform hover:-translate-y-0.5"
+                >
+                  View Menu
+                </a>
+                <a 
+                  href={aboutInfo.socials.facebook}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-blue-600 text-white font-semibold py-3 px-6 rounded-xl hover:bg-blue-700 transition-all duration-300 text-center hover:shadow-lg transform hover:-translate-y-0.5 flex items-center justify-center space-x-2"
+                >
+                  <Facebook className="w-4 h-4" />
+                  <span>Facebook</span>
+                </a>
+              </div>
           </div>
         </div>
       </div>

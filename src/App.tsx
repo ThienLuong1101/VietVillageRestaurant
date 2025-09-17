@@ -4,6 +4,7 @@ import home1 from "./about/home1.jpg";
 import AboutSection from "./components/about.jsx";
 import FoodGallerySection from "./components/foodGallery.jsx";
 import MenuSection from "./components/menu.jsx";
+import ContactSection from "./components/contact.jsx";
 
 function App() {
   
@@ -37,8 +38,9 @@ function App() {
           </div>
         </div>
       </div>
-
+          <ContactSection />
       <AboutSection />
+    
       <FoodGallerySection />
       <MenuSection/>
       
