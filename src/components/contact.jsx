@@ -15,12 +15,12 @@ export function ContactSection() {
 
   return (
     <section id="contact" className="pt-10 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4 max-w-6xl">
+      {/* <div className="container mx-auto px-4 max-w-6xl">
         
-        {/* Contact Options */}
+
         <div className="max-w-2xl mx-auto">
           
-          {/* AI Assistant */}
+
           <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-6 rounded-2xl shadow-lg border border-purple-100">
             <div className="flex items-center space-x-3 mb-3">
               <div className="w-12 h-12 rounded-full overflow-hidden animate-bounce">
@@ -47,7 +47,7 @@ export function ContactSection() {
             </button>
           </div>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 }
