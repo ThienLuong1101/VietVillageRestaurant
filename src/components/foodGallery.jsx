@@ -14,7 +14,7 @@ import food11 from "../foods/food11.jpg";
 import food13 from "../foods/food13.jpg";
 import food14 from "../foods/food14.jpg";
 import food15 from "../foods/food15.jpg";
-import { Book, ArrowRight } from 'lucide-react';
+import { Book, ArrowRight, Bot } from 'lucide-react';
 
 export function FoodGallerySection() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,6 +57,17 @@ export function FoodGallerySection() {
 
   return (
     <div id="food-gallery" className="py-16 bg-gray-50 relative">
+      {/* Sticky AI Booking Button */}
+      <div className="fixed top-6 right-6 z-50 transition-all duration-300">
+        <a 
+          href="tel:+61871009132"
+          className="flex items-center bg-purple-600 text-white px-4 py-3 rounded-lg shadow-lg hover:bg-purple-700 transition-colors duration-300 group"
+        >
+          <Bot className="w-5 h-5 mr-2 transition-transform duration-300 group-hover:rotate-12" />
+          <span className="font-medium">AI Booking</span>
+        </a>
+      </div>
+
       {/* Sticky Menu Button */}
       <div className={`fixed right-0 top-1/2 transform -translate-y-1/2 z-50 transition-all duration-300 ${isScrolled ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}>
         <a 
