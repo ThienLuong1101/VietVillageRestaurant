@@ -5,9 +5,15 @@
     <link rel="icon" type="image/svg+xml" href="/VietRestaurant.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vietnam Village Restaurant</title>
+    <link rel="stylesheet" href="https://bookings.ordiagents.org/ordi-chat.css" />
   </head>
   <body>
     <div id="root"></div>
+    <script>
+  window.process = { env: { NODE_ENV: 'production' } };
+</script>
+    <div id="ordi-chat-launcher"></div>
+    <script src="https://bookings.ordiagents.org/ordi-chat.js"></script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

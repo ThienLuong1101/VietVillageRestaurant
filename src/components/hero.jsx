@@ -8,7 +8,7 @@ export default function HeroSection() {
         <div className="container mx-auto flex items-center justify-between px-6 py-4 bg-black bg-opacity-50">
           {/* You can insert a logo or brand name on the left */}
           <div className="text-white text-xl font-bold">
-            Vietnam Village
+            Vietnam Village Restaurant
           </div>
           {/* Nav buttons */}
           <div className="flex space-x-4">
