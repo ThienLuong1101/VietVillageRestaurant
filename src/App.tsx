@@ -43,7 +43,7 @@ function App() {
         }`}
       >
         <div className="container mx-auto px-6 flex items-center justify-between">
-          <a href="#home" className={`text-xl font-bold transition-colors duration-300 ${scrolled ? 'text-gray-900' : 'text-white'}`}>
+          <a href="#home" className={`text-lg md:text-xl font-bold transition-colors duration-300 ${scrolled ? 'text-gray-900' : 'text-white'}`}>
             Vietnam Village Restaurant
           </a>
 
@@ -125,7 +125,7 @@ function App() {
           <span className="inline-block px-4 py-1.5 mb-6 text-sm tracking-widest uppercase border border-white/30 rounded-full bg-white/10 backdrop-blur-sm animate-fade-in">
             Authentic Vietnamese Cuisine
           </span>
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold mb-6 animate-fade-in-up">
             Vietnam Village Restaurant
           </h1>
           <p className="text-xl md:text-2xl mb-10 text-white/90 max-w-2xl animate-fade-in-up" style={{ animationDelay: '0.15s' }}>
@@ -165,17 +165,17 @@ function App() {
 
       {/* Info Bar */}
       <div className="bg-red-700 text-white py-4">
-        <div className="container mx-auto px-6 flex flex-wrap items-center justify-center gap-6 md:gap-12 text-sm">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-center gap-3 md:gap-12 text-sm text-center">
           <div className="flex items-center gap-2">
-            <Clock className="w-4 h-4" />
+            <Clock className="w-4 h-4 shrink-0" />
             <span>Tue–Sat: 11am–2pm, 5–10pm &nbsp;|&nbsp; Sun: 5–10pm</span>
           </div>
           <div className="flex items-center gap-2">
-            <MapPin className="w-4 h-4" />
+            <MapPin className="w-4 h-4 shrink-0" />
             <span>2 Smith St, Thebarton SA 5031</span>
           </div>
           <a href="tel:0883521719" className="flex items-center gap-2 hover:text-red-200 transition-colors">
-            <Phone className="w-4 h-4" />
+            <Phone className="w-4 h-4 shrink-0" />
             <span>(08) 8352 1719</span>
           </a>
         </div>

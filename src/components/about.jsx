@@ -103,7 +103,7 @@ export function AboutSection() {
             </div>
 
             {/* Highlights */}
-            <div className={`grid grid-cols-3 gap-4 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+            <div className={`grid grid-cols-1 sm:grid-cols-3 gap-4 transition-all duration-700 delay-200 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
               {highlights.map((h) => (
                 <div key={h.label} className="text-center p-4 bg-white rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
                   <div className="w-10 h-10 bg-red-50 rounded-full flex items-center justify-center mx-auto mb-2">
@@ -167,7 +167,7 @@ export function AboutSection() {
             </div>
 
             {/* CTA Buttons */}
-            <div className={`flex gap-4 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+            <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
               <a
                 href="https://bookings.ordiagents.org/stories?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f"
                 target="_blank"

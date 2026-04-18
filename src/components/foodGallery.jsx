@@ -68,8 +68,8 @@ export function FoodGallerySection() {
 
   return (
     <div id="food-gallery" ref={sectionRef} className="py-20 bg-gray-50 relative">
-      {/* Sticky Menu Button */}
-      <div className={`fixed right-0 top-1/2 transform -translate-y-1/2 z-40 transition-all duration-500 ${isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10 pointer-events-none'}`}>
+      {/* Sticky Menu Button — hidden on small screens */}
+      <div className={`hidden md:block fixed right-0 top-1/2 transform -translate-y-1/2 z-40 transition-all duration-500 ${isScrolled ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10 pointer-events-none'}`}>
         <a
           href="#menu"
           className="flex items-center bg-red-600 text-white px-5 py-4 rounded-l-xl shadow-xl hover:bg-red-700 transition-colors duration-300 group"
