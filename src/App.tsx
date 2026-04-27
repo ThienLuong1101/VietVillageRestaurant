@@ -144,15 +144,7 @@ function App() {
             >
               Make a Reservation
             </a>
-            <a
-              href={STORIES_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full sm:w-auto rounded-full border-2 border-white px-8 py-3.5 text-center font-semibold text-white transition-all duration-300 hover:bg-white hover:text-gray-900 hover:shadow-lg hover:-translate-y-0.5 flex items-center justify-center gap-2"
-            >
-              <Users className="w-4 h-4" />
-              Community
-            </a>
+          
           </div>
         </div>
 
