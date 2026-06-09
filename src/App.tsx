@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Facebook, Menu, X, ChevronDown, Phone, MapPin, Clock, Users } from 'lucide-react';
+import { Facebook, Menu, X, Phone, MapPin, Clock, Users } from 'lucide-react';
 import home1 from "./about/home1.jpg";
 import AboutSection from "./components/about.jsx";
 import FoodGallerySection from "./components/foodGallery.jsx";
@@ -156,11 +156,6 @@ function App() {
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <a href="#about" className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center text-white/70 hover:text-white transition-colors animate-bounce">
-          <span className="text-xs uppercase tracking-widest mb-2">Scroll</span>
-          <ChevronDown className="w-5 h-5" />
-        </a>
       </section>
 
       {/* Info Bar */}
