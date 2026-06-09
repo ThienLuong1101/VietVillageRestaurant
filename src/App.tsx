@@ -8,6 +8,7 @@ import ContactSection from "./components/contact.jsx";
 
 const STORIES_URL = 'https://bookings.ordiagents.org/stories?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f';
 const BOOKING_URL = 'https://bookings.ordiagents.org/?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f';
+const ORDER_URL = 'https://bookings.ordiagents.org/ordering?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f';
 
 function App() {
   const [scrolled, setScrolled] = useState(false);
@@ -144,7 +145,14 @@ function App() {
             >
               Make a Reservation
             </a>
-          
+            <a
+              href={ORDER_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full sm:w-auto rounded-full bg-amber-500 px-8 py-3.5 text-center font-bold text-white transition-all duration-300 hover:bg-amber-600 hover:shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5"
+            >
+              Order Here
+            </a>
           </div>
         </div>
 

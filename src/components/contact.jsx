@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Phone, MapPin, Clock, ExternalLink, Navigation } from 'lucide-react';
+import { Phone, MapPin, Clock, ExternalLink, Navigation, ShoppingBag } from 'lucide-react';
 
 export function ContactSection() {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,7 +28,9 @@ export function ContactSection() {
     return () => clearTimeout(timer);
   }, []);
 
-  const contactCards = [
+  const ORDER_URL = 'https://bookings.ordiagents.org/ordering?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f';
+
+const contactCards = [
     {
       icon: Phone,
       title: 'Reservations',
@@ -111,13 +113,22 @@ export function ContactSection() {
         </div>
 
         {/* CTA */}
-        <div className={`mt-12 text-center transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
+        <div className={`mt-12 text-center flex flex-col sm:flex-row items-center justify-center gap-4 transition-all duration-700 delay-500 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}>
           <a
             href="https://bookings.ordiagents.org/?clientId=7fa37de871a62de22f859c65d272a37fa53d90442b36f127a88aef3d88ba78a6&venueId=68a92867cfabf202c2563a2f"
             className="inline-flex items-center gap-2 bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-red-700 transition-all duration-300 shadow-lg hover:shadow-red-500/30 hover:-translate-y-0.5"
           >
             <Navigation className="w-5 h-5" />
             Reserve Your Table
+          </a>
+          <a
+            href={ORDER_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-amber-500 text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-amber-600 transition-all duration-300 shadow-lg hover:shadow-amber-500/30 hover:-translate-y-0.5"
+          >
+            <ShoppingBag className="w-5 h-5" />
+            Order Here
           </a>
         </div>
       </div>
